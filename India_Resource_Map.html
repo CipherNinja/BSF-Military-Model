@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00d0c794bfb1867cbe294d29fa9793ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00d0c794bfb1867cbe294d29fa9793ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00d0c794bfb1867cbe294d29fa9793ed = L.map(
+                "map_00d0c794bfb1867cbe294d29fa9793ed",
+                {
+                    center: [22.3511, 78.6677],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae402a60a663c110b53da66bcfce1202 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ae402a60a663c110b53da66bcfce1202.addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var marker_9498cec5a4baf387937d1b17f3d90b1c = L.marker(
+                [28.6974, 77.4538],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_f34bf80fdd888f26fc4bd8451e81b86d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec4dab7f251fe7a0642e8606df7d2b67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccdd677f7c31c92bfe61460c24a65a90 = $(`<div id="html_ccdd677f7c31c92bfe61460c24a65a90" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Hindon</div>`)[0];
+                popup_ec4dab7f251fe7a0642e8606df7d2b67.setContent(html_ccdd677f7c31c92bfe61460c24a65a90);
+            
+        
+
+        marker_9498cec5a4baf387937d1b17f3d90b1c.bindPopup(popup_ec4dab7f251fe7a0642e8606df7d2b67)
+        ;
+
+        
+    
+    
+                marker_9498cec5a4baf387937d1b17f3d90b1c.setIcon(icon_f34bf80fdd888f26fc4bd8451e81b86d);
+            
+    
+            var marker_1cd23af9278215b8979b500fb8b5414a = L.marker(
+                [22.4707, 70.0577],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_b8db00a59072b4f98cec5d6be0dc4352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d322cf5ded3fcb3808c0fde219de8d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ea3d42071785d36bca293703866d97 = $(`<div id="html_d3ea3d42071785d36bca293703866d97" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Jamnagar</div>`)[0];
+                popup_3d322cf5ded3fcb3808c0fde219de8d0.setContent(html_d3ea3d42071785d36bca293703866d97);
+            
+        
+
+        marker_1cd23af9278215b8979b500fb8b5414a.bindPopup(popup_3d322cf5ded3fcb3808c0fde219de8d0)
+        ;
+
+        
+    
+    
+                marker_1cd23af9278215b8979b500fb8b5414a.setIcon(icon_b8db00a59072b4f98cec5d6be0dc4352);
+            
+    
+            var marker_56434abf516d8426fca12f8703c994ae = L.marker(
+                [30.39, 78.48],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_2daa7b4716a8beea36bf3a3f47a694de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b7c3bf530557f4a5c65804aa6201e2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f2d9685cab9eca9f034bca266acf185 = $(`<div id="html_8f2d9685cab9eca9f034bca266acf185" style="width: 100.0%; height: 100.0%;"><b>Dams:</b> Tehri Dam</div>`)[0];
+                popup_8b7c3bf530557f4a5c65804aa6201e2c.setContent(html_8f2d9685cab9eca9f034bca266acf185);
+            
+        
+
+        marker_56434abf516d8426fca12f8703c994ae.bindPopup(popup_8b7c3bf530557f4a5c65804aa6201e2c)
+        ;
+
+        
+    
+    
+                marker_56434abf516d8426fca12f8703c994ae.setIcon(icon_2daa7b4716a8beea36bf3a3f47a694de);
+            
+    
+            var marker_62c80cfd8b5f3bfb731797a5461953a9 = L.marker(
+                [31.4167, 76.4333],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_4880286511e67de132a6a9176038b739 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ed6c3ecc3e2c738545c337b22fb0974 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c5927a5e9a50135cb2f7c707a3d6a2b = $(`<div id="html_0c5927a5e9a50135cb2f7c707a3d6a2b" style="width: 100.0%; height: 100.0%;"><b>Dams:</b> Bhakra Dam</div>`)[0];
+                popup_1ed6c3ecc3e2c738545c337b22fb0974.setContent(html_0c5927a5e9a50135cb2f7c707a3d6a2b);
+            
+        
+
+        marker_62c80cfd8b5f3bfb731797a5461953a9.bindPopup(popup_1ed6c3ecc3e2c738545c337b22fb0974)
+        ;
+
+        
+    
+    
+                marker_62c80cfd8b5f3bfb731797a5461953a9.setIcon(icon_4880286511e67de132a6a9176038b739);
+            
+    
+            var marker_8d22eabc6a5415ba4b2ac1f89e1b5e44 = L.marker(
+                [28.7041, 77.1025],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_1864d2fe2f855534615a7fc306059530 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cbe968ce6e35776bb8577e8cd53cb03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1054c0ab2f6d9a8be1e4425fdd7e3f0 = $(`<div id="html_e1054c0ab2f6d9a8be1e4425fdd7e3f0" style="width: 100.0%; height: 100.0%;"><b>Major Cities:</b> Delhi</div>`)[0];
+                popup_0cbe968ce6e35776bb8577e8cd53cb03.setContent(html_e1054c0ab2f6d9a8be1e4425fdd7e3f0);
+            
+        
+
+        marker_8d22eabc6a5415ba4b2ac1f89e1b5e44.bindPopup(popup_0cbe968ce6e35776bb8577e8cd53cb03)
+        ;
+
+        
+    
+    
+                marker_8d22eabc6a5415ba4b2ac1f89e1b5e44.setIcon(icon_1864d2fe2f855534615a7fc306059530);
+            
+    
+            var marker_5c7410451891195f02fcc2a4456b6729 = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_e25f82a775f43c3f6171091d8145efae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5571edbb276a49266da31436744f6c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ededf69e83c592dd06ee534c8b6411ae = $(`<div id="html_ededf69e83c592dd06ee534c8b6411ae" style="width: 100.0%; height: 100.0%;"><b>Major Cities:</b> Mumbai</div>`)[0];
+                popup_c5571edbb276a49266da31436744f6c7.setContent(html_ededf69e83c592dd06ee534c8b6411ae);
+            
+        
+
+        marker_5c7410451891195f02fcc2a4456b6729.bindPopup(popup_c5571edbb276a49266da31436744f6c7)
+        ;
+
+        
+    
+    
+                marker_5c7410451891195f02fcc2a4456b6729.setIcon(icon_e25f82a775f43c3f6171091d8145efae);
+            
+    
+            var marker_e60fc3e824df9a3fcc552a85ff869d1a = L.marker(
+                [8.1634, 77.7284],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_6975dfe6410eb36be206adb495d473ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cc16829610fae3b814b322949796659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9272b4627b067d735c446e744d7601a = $(`<div id="html_a9272b4627b067d735c446e744d7601a" style="width: 100.0%; height: 100.0%;"><b>Power Stations:</b> Kudankulam Nuclear Power Plant</div>`)[0];
+                popup_5cc16829610fae3b814b322949796659.setContent(html_a9272b4627b067d735c446e744d7601a);
+            
+        
+
+        marker_e60fc3e824df9a3fcc552a85ff869d1a.bindPopup(popup_5cc16829610fae3b814b322949796659)
+        ;
+
+        
+    
+    
+                marker_e60fc3e824df9a3fcc552a85ff869d1a.setIcon(icon_6975dfe6410eb36be206adb495d473ee);
+            
+    
+            var marker_4309e804bbed98e6e1fab75fbd682d40 = L.marker(
+                [19.8638, 72.6523],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_7b559690a198815f249d15676ec49faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dd43edb87646cc6405ea629a95912b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2f7d09c264193962f10b566969364f = $(`<div id="html_aa2f7d09c264193962f10b566969364f" style="width: 100.0%; height: 100.0%;"><b>Power Stations:</b> Tarapur Atomic Power Station</div>`)[0];
+                popup_5dd43edb87646cc6405ea629a95912b0.setContent(html_aa2f7d09c264193962f10b566969364f);
+            
+        
+
+        marker_4309e804bbed98e6e1fab75fbd682d40.bindPopup(popup_5dd43edb87646cc6405ea629a95912b0)
+        ;
+
+        
+    
+    
+                marker_4309e804bbed98e6e1fab75fbd682d40.setIcon(icon_7b559690a198815f249d15676ec49faf);
+            
+    
+            var marker_06ea0a1dfac37a16f7a61f3699b39390 = L.marker(
+                [34.1526, 77.5771],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_32b427abc57cc1efbd82bb567b7030be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc42262a3346a2ec02ec377198482d43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11f6ce031363782d8fc19afa788e24ec = $(`<div id="html_11f6ce031363782d8fc19afa788e24ec" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Military Outpost Leh</div>`)[0];
+                popup_dc42262a3346a2ec02ec377198482d43.setContent(html_11f6ce031363782d8fc19afa788e24ec);
+            
+        
+
+        marker_06ea0a1dfac37a16f7a61f3699b39390.bindPopup(popup_dc42262a3346a2ec02ec377198482d43)
+        ;
+
+        
+    
+    
+                marker_06ea0a1dfac37a16f7a61f3699b39390.setIcon(icon_32b427abc57cc1efbd82bb567b7030be);
+            
+    
+            var marker_ab2f2d5a96c1b8fbd4d3aa9542c011a8 = L.marker(
+                [11.6234, 92.7265],
+                {
+}
+            ).addTo(map_00d0c794bfb1867cbe294d29fa9793ed);
+        
+    
+            var icon_0475219ae72b5b631df64cde21a582ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49ec7105f063cdb23ab26b79120071c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79a7b138a19a4d53c109f79ddd406a07 = $(`<div id="html_79a7b138a19a4d53c109f79ddd406a07" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Strategic Base Port Blair</div>`)[0];
+                popup_49ec7105f063cdb23ab26b79120071c9.setContent(html_79a7b138a19a4d53c109f79ddd406a07);
+            
+        
+
+        marker_ab2f2d5a96c1b8fbd4d3aa9542c011a8.bindPopup(popup_49ec7105f063cdb23ab26b79120071c9)
+        ;
+
+        
+    
+    
+                marker_ab2f2d5a96c1b8fbd4d3aa9542c011a8.setIcon(icon_0475219ae72b5b631df64cde21a582ce);
+            
+</script>
+</html>
