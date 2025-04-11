@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map with Strategic Locations</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Map: Strategic Locations of India</h1>
+    <div id="map"></div>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([22.3511, 78.6677], 5);
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Strategic locations
+        var locations = [
+            // Airbases
+            { name: "Air Force Station Hindon", coords: [28.6974, 77.4538], type: "Airbase" },
+            { name: "Air Force Station Jamnagar", coords: [22.4707, 70.0577], type: "Airbase" },
+            { name: "Air Force Station Vishakhapatnam", coords: [17.6868, 83.2185], type: "Airbase" },
+            { name: "Air Force Station Agra", coords: [27.1767, 78.0081], type: "Airbase" },
+            { name: "Air Force Station Pathankot", coords: [32.2649, 75.6499], type: "Airbase" },
+            { name: "AWACS Base Chennai", coords: [13.0827, 80.2707], type: "AWACS Base" },
+
+            // Military Outposts
+            { name: "Military Outpost Leh", coords: [34.1526, 77.5771], type: "Military Outpost" },
+            { name: "Military Outpost Srinagar", coords: [34.0837, 74.7973], type: "Military Outpost" },
+            { name: "Ground Troop Deployment Siliguri", coords: [26.7271, 88.3953], type: "Ground Troop Deployment" },
+
+            // Naval Deployments
+            { name: "Naval Base INS Kadamba", coords: [14.8512, 74.1048], type: "Naval Base" },
+            { name: "Naval Base Port Blair", coords: [11.6234, 92.7265], type: "Naval Base" },
+            { name: "Aircraft Carrier INS Vikrant", coords: [15.2993, 74.1240], type: "Aircraft Carrier" },
+            { name: "Submarine Base Visakhapatnam", coords: [17.6868, 83.2185], type: "Submarine Base" },
+
+            // Dams
+            { name: "Tehri Dam", coords: [30.3900, 78.4800], type: "Dam" },
+            { name: "Bhakra Dam", coords: [31.4167, 76.4333], type: "Dam" },
+            { name: "Hirakud Dam", coords: [21.5375, 83.8726], type: "Dam" },
+
+            // Energy Facilities
+            { name: "Kudankulam Nuclear Power Plant", coords: [8.1634, 77.7284], type: "Nuclear Plant" },
+            { name: "Tarapur Atomic Power Station", coords: [19.8638, 72.6523], type: "Nuclear Plant" },
+            { name: "Ramagundam Power Station", coords: [18.7557, 79.4565], type: "Thermal Power Plant" },
+
+            // Radar Stations
+            { name: "Radar Station Kolkata", coords: [22.5726, 88.3639], type: "Radar Station" },
+            { name: "Radar Station Chandigarh", coords: [30.7333, 76.7794], type: "Radar Station" },
+
+            // Dummy Deployments
+            { name: "Missile Defense Installation Delhi", coords: [28.7041, 77.1025], type: "Missile Defense" },
+            { name: "Submarine INS Arihant Deployment", coords: [11.6234, 92.7265], type: "Submarine Deployment" },
+            { name: "AWACS Deployment Andaman", coords: [11.7401, 92.6586], type: "AWACS Deployment" },
+
+            // Add more resources as needed for a comprehensive strategic map
+        ];
+
+        // Add markers for strategic locations
+        locations.forEach(location => {
+            L.marker(location.coords)
+                .addTo(map)
+                .bindPopup(`<b>${location.name}</b><br>Type: ${location.type}`);
+        });
+
+        // Handle user clicks on the map
+        map.on('click', function(e) {
+            var lat = e.latlng.lat;
+            var lng = e.latlng.lng;
+
+            // Add a red marker for the pinned location
+            L.marker([lat, lng], { color: "red" })
+                .addTo(map)
+                .bindPopup(`Pinned Location: Latitude ${lat}, Longitude ${lng}`)
+                .openPopup();
+
+            // Send the pinned location to the backend
+            fetch('/process-location', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ coords: [lat, lng] })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Nearest Locations:', data.nearest);
+                alert(`Nearest Locations:\n${data.nearest.map(loc => `${loc.name} (${loc.type}) - ${loc.distance}`).join('\n')}`);
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

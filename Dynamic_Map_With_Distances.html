@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f29c90df4e9ca7215e086dd7f5cf7de2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f29c90df4e9ca7215e086dd7f5cf7de2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f29c90df4e9ca7215e086dd7f5cf7de2 = L.map(
+                "map_f29c90df4e9ca7215e086dd7f5cf7de2",
+                {
+                    center: [22.3511, 78.6677],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf4b3e403c6c3a593de03373590a3a94 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cf4b3e403c6c3a593de03373590a3a94.addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var marker_199de835bd4d5e7050b895c208029f24 = L.marker(
+                [28.6974, 77.4538],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_9320ea139460a7fb95846ec9e5ae78d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0c1e721daedc495a31bd4b1fa29d2f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be16fd05b42f06f178fc24188c502582 = $(`<div id="html_be16fd05b42f06f178fc24188c502582" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Hindon</div>`)[0];
+                popup_d0c1e721daedc495a31bd4b1fa29d2f3.setContent(html_be16fd05b42f06f178fc24188c502582);
+            
+        
+
+        marker_199de835bd4d5e7050b895c208029f24.bindPopup(popup_d0c1e721daedc495a31bd4b1fa29d2f3)
+        ;
+
+        
+    
+    
+                marker_199de835bd4d5e7050b895c208029f24.setIcon(icon_9320ea139460a7fb95846ec9e5ae78d9);
+            
+    
+            var marker_62cdece9885946a14635781a70d560b4 = L.marker(
+                [22.4707, 70.0577],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_bd10f5f1a30d48991a675971ab0145b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b9b460a6250a5e4e276f6bd93e7d52e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9df58c6e707a70f432e4c070c04f3f95 = $(`<div id="html_9df58c6e707a70f432e4c070c04f3f95" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Jamnagar</div>`)[0];
+                popup_7b9b460a6250a5e4e276f6bd93e7d52e.setContent(html_9df58c6e707a70f432e4c070c04f3f95);
+            
+        
+
+        marker_62cdece9885946a14635781a70d560b4.bindPopup(popup_7b9b460a6250a5e4e276f6bd93e7d52e)
+        ;
+
+        
+    
+    
+                marker_62cdece9885946a14635781a70d560b4.setIcon(icon_bd10f5f1a30d48991a675971ab0145b1);
+            
+    
+            var marker_4bb8dd0900d732823a1e1a64283a2a30 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_7d2af84abfbf705a2586aecafd80a276 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b00a0aafb3f10cf204acd7b8bf7e710 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5c69a33572836cb9bcc9b20be0e650c = $(`<div id="html_d5c69a33572836cb9bcc9b20be0e650c" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Vishakhapatnam</div>`)[0];
+                popup_1b00a0aafb3f10cf204acd7b8bf7e710.setContent(html_d5c69a33572836cb9bcc9b20be0e650c);
+            
+        
+
+        marker_4bb8dd0900d732823a1e1a64283a2a30.bindPopup(popup_1b00a0aafb3f10cf204acd7b8bf7e710)
+        ;
+
+        
+    
+    
+                marker_4bb8dd0900d732823a1e1a64283a2a30.setIcon(icon_7d2af84abfbf705a2586aecafd80a276);
+            
+    
+            var marker_a6243db7d9d583dd30c8ae3e0f529076 = L.marker(
+                [27.1767, 78.0081],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_35d01c14e3e8ddc52deccaed27fc137d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98a486cff3539dc765be05ef4cff3268 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d9387e736a005d4f2ee2e43d830e83d = $(`<div id="html_6d9387e736a005d4f2ee2e43d830e83d" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Agra</div>`)[0];
+                popup_98a486cff3539dc765be05ef4cff3268.setContent(html_6d9387e736a005d4f2ee2e43d830e83d);
+            
+        
+
+        marker_a6243db7d9d583dd30c8ae3e0f529076.bindPopup(popup_98a486cff3539dc765be05ef4cff3268)
+        ;
+
+        
+    
+    
+                marker_a6243db7d9d583dd30c8ae3e0f529076.setIcon(icon_35d01c14e3e8ddc52deccaed27fc137d);
+            
+    
+            var marker_04630b1e831a6485619eb87fe51480ba = L.marker(
+                [32.2649, 75.6499],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_39ce7341411d71615b36149534034b69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f702e9d5602480e0a9b51203ded541ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_955a96128db02c04f33182a14ae585aa = $(`<div id="html_955a96128db02c04f33182a14ae585aa" style="width: 100.0%; height: 100.0%;"><b>Airbases:</b> Air Force Station Pathankot</div>`)[0];
+                popup_f702e9d5602480e0a9b51203ded541ac.setContent(html_955a96128db02c04f33182a14ae585aa);
+            
+        
+
+        marker_04630b1e831a6485619eb87fe51480ba.bindPopup(popup_f702e9d5602480e0a9b51203ded541ac)
+        ;
+
+        
+    
+    
+                marker_04630b1e831a6485619eb87fe51480ba.setIcon(icon_39ce7341411d71615b36149534034b69);
+            
+    
+            var marker_393ef31f558dfc613059e5da59eeede2 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_73a6a18e244f817a091a7e93d0785ea2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02584dc0fa036a5d1a986e349ce878a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dd7ab082510dc4285a5fe4741eafc64 = $(`<div id="html_3dd7ab082510dc4285a5fe4741eafc64" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Military Outpost Kolkata</div>`)[0];
+                popup_02584dc0fa036a5d1a986e349ce878a9.setContent(html_3dd7ab082510dc4285a5fe4741eafc64);
+            
+        
+
+        marker_393ef31f558dfc613059e5da59eeede2.bindPopup(popup_02584dc0fa036a5d1a986e349ce878a9)
+        ;
+
+        
+    
+    
+                marker_393ef31f558dfc613059e5da59eeede2.setIcon(icon_73a6a18e244f817a091a7e93d0785ea2);
+            
+    
+            var marker_30b2f73d241c3e7a8d7ca872f577bd55 = L.marker(
+                [11.6234, 92.7265],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_990e0e487dcd10a9fbdf284bc6713c2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afbd82df25797e0be5e411cc4097182b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c96931b207d8d52600d988f2fad53ce = $(`<div id="html_9c96931b207d8d52600d988f2fad53ce" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Strategic Base Port Blair</div>`)[0];
+                popup_afbd82df25797e0be5e411cc4097182b.setContent(html_9c96931b207d8d52600d988f2fad53ce);
+            
+        
+
+        marker_30b2f73d241c3e7a8d7ca872f577bd55.bindPopup(popup_afbd82df25797e0be5e411cc4097182b)
+        ;
+
+        
+    
+    
+                marker_30b2f73d241c3e7a8d7ca872f577bd55.setIcon(icon_990e0e487dcd10a9fbdf284bc6713c2e);
+            
+    
+            var marker_1d4399a84daba5adee74283bf49019e1 = L.marker(
+                [34.1526, 77.5771],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_478f8111cd95595b27ca194ecb496586 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac81e169569fa39c17b9461cbcc58918 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b0807b4d434e61cc4a55edd9be1a66b = $(`<div id="html_2b0807b4d434e61cc4a55edd9be1a66b" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Military Outpost Leh</div>`)[0];
+                popup_ac81e169569fa39c17b9461cbcc58918.setContent(html_2b0807b4d434e61cc4a55edd9be1a66b);
+            
+        
+
+        marker_1d4399a84daba5adee74283bf49019e1.bindPopup(popup_ac81e169569fa39c17b9461cbcc58918)
+        ;
+
+        
+    
+    
+                marker_1d4399a84daba5adee74283bf49019e1.setIcon(icon_478f8111cd95595b27ca194ecb496586);
+            
+    
+            var marker_2af34aeda36e65a460535687851c76c8 = L.marker(
+                [34.0837, 74.7973],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_aa1fb4dfd903eb13e1485cb338584c89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a11f07de92bfb85d101585086175e131 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fe82bfa4b62f98a50e723dd9ff97234 = $(`<div id="html_5fe82bfa4b62f98a50e723dd9ff97234" style="width: 100.0%; height: 100.0%;"><b>Military Outposts:</b> Military Outpost Srinagar</div>`)[0];
+                popup_a11f07de92bfb85d101585086175e131.setContent(html_5fe82bfa4b62f98a50e723dd9ff97234);
+            
+        
+
+        marker_2af34aeda36e65a460535687851c76c8.bindPopup(popup_a11f07de92bfb85d101585086175e131)
+        ;
+
+        
+    
+    
+                marker_2af34aeda36e65a460535687851c76c8.setIcon(icon_aa1fb4dfd903eb13e1485cb338584c89);
+            
+    
+            var marker_2c2181d9636489e4a54a3fdf5f40fad4 = L.marker(
+                [14.8512, 74.1048],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_3baf3951bf7b9adbed21587c511cf6d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dc9f425ebc5c757abfe90005e774a7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84ab28d9849296bd8db4ea155b495fab = $(`<div id="html_84ab28d9849296bd8db4ea155b495fab" style="width: 100.0%; height: 100.0%;"><b>Navy Bases:</b> Naval Base INS Kadamba</div>`)[0];
+                popup_9dc9f425ebc5c757abfe90005e774a7a.setContent(html_84ab28d9849296bd8db4ea155b495fab);
+            
+        
+
+        marker_2c2181d9636489e4a54a3fdf5f40fad4.bindPopup(popup_9dc9f425ebc5c757abfe90005e774a7a)
+        ;
+
+        
+    
+    
+                marker_2c2181d9636489e4a54a3fdf5f40fad4.setIcon(icon_3baf3951bf7b9adbed21587c511cf6d4);
+            
+    
+            var marker_44432036047d78c276c81e4ec7ecbc59 = L.marker(
+                [19.7489, 85.3625],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_de9fd8c6ea22e50441c335fc7fd40509 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cf002b4010fe8d1c920218667715134 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61a7b8ce1b59aa58e9b9eaf85fff0056 = $(`<div id="html_61a7b8ce1b59aa58e9b9eaf85fff0056" style="width: 100.0%; height: 100.0%;"><b>Navy Bases:</b> Naval Base INS Chilka</div>`)[0];
+                popup_1cf002b4010fe8d1c920218667715134.setContent(html_61a7b8ce1b59aa58e9b9eaf85fff0056);
+            
+        
+
+        marker_44432036047d78c276c81e4ec7ecbc59.bindPopup(popup_1cf002b4010fe8d1c920218667715134)
+        ;
+
+        
+    
+    
+                marker_44432036047d78c276c81e4ec7ecbc59.setIcon(icon_de9fd8c6ea22e50441c335fc7fd40509);
+            
+    
+            var marker_fe357d01781edfe66a92183a7147dd6a = L.marker(
+                [23.6845, 90.3563],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_74622195378da38b6f0042938cd27a17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a015e9029bf0a84dcbc9a72aec81783c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_493f36705b86439edbd4df52d0b79a0a = $(`<div id="html_493f36705b86439edbd4df52d0b79a0a" style="width: 100.0%; height: 100.0%;"><b>Pinned Location:</b> Pinned Location near Bangladesh</div>`)[0];
+                popup_a015e9029bf0a84dcbc9a72aec81783c.setContent(html_493f36705b86439edbd4df52d0b79a0a);
+            
+        
+
+        marker_fe357d01781edfe66a92183a7147dd6a.bindPopup(popup_a015e9029bf0a84dcbc9a72aec81783c)
+        ;
+
+        
+    
+    
+                marker_fe357d01781edfe66a92183a7147dd6a.setIcon(icon_74622195378da38b6f0042938cd27a17);
+            
+    
+            var marker_7796f624e85a8606b59f088d571e3146 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_1cc7f6d75f14e2029b9bd08b64a9f312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3737a75bb63b8306be7b8f00224a682f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b1cd8156aed72ad52fb5edae977b6a5 = $(`<div id="html_7b1cd8156aed72ad52fb5edae977b6a5" style="width: 100.0%; height: 100.0%;"><b>Military Outpost Kolkata</b><br>Distance from pinned location: 238.34 km</div>`)[0];
+                popup_3737a75bb63b8306be7b8f00224a682f.setContent(html_7b1cd8156aed72ad52fb5edae977b6a5);
+            
+        
+
+        marker_7796f624e85a8606b59f088d571e3146.bindPopup(popup_3737a75bb63b8306be7b8f00224a682f)
+        ;
+
+        
+    
+    
+                marker_7796f624e85a8606b59f088d571e3146.setIcon(icon_1cc7f6d75f14e2029b9bd08b64a9f312);
+            
+    
+            var poly_line_91416df7ede11220018045dfa0b118f0 = L.polyline(
+                [[23.6845, 90.3563], [22.5726, 88.3639]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_91416df7ede11220018045dfa0b118f0.bindTooltip(
+                `<div>
+                     238.34 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb060b827ef3c415a4809dbac368140b = L.marker(
+                [19.7489, 85.3625],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_6e314c38c873a7d92be771ea96e48595 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1213023336bb41bef00d97f64736a50b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b595833ef8024e8d3a4b2da184f8e1f = $(`<div id="html_4b595833ef8024e8d3a4b2da184f8e1f" style="width: 100.0%; height: 100.0%;"><b>Naval Base INS Chilka</b><br>Distance from pinned location: 675.79 km</div>`)[0];
+                popup_1213023336bb41bef00d97f64736a50b.setContent(html_4b595833ef8024e8d3a4b2da184f8e1f);
+            
+        
+
+        marker_cb060b827ef3c415a4809dbac368140b.bindPopup(popup_1213023336bb41bef00d97f64736a50b)
+        ;
+
+        
+    
+    
+                marker_cb060b827ef3c415a4809dbac368140b.setIcon(icon_6e314c38c873a7d92be771ea96e48595);
+            
+    
+            var poly_line_eae1ffec16dd2e1859dd3baf19b7715f = L.polyline(
+                [[23.6845, 90.3563], [19.7489, 85.3625]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_eae1ffec16dd2e1859dd3baf19b7715f.bindTooltip(
+                `<div>
+                     675.79 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_13f429a89e95022c78510f37351d9877 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            var icon_f6e2f6728ba78c71a6bce1bd896e1f6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1705d98702ae48d7176e9b23d2525d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7662eebe8a1e9d7540f6fb352680d84c = $(`<div id="html_7662eebe8a1e9d7540f6fb352680d84c" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Vishakhapatnam</b><br>Distance from pinned location: 996.57 km</div>`)[0];
+                popup_a1705d98702ae48d7176e9b23d2525d4.setContent(html_7662eebe8a1e9d7540f6fb352680d84c);
+            
+        
+
+        marker_13f429a89e95022c78510f37351d9877.bindPopup(popup_a1705d98702ae48d7176e9b23d2525d4)
+        ;
+
+        
+    
+    
+                marker_13f429a89e95022c78510f37351d9877.setIcon(icon_f6e2f6728ba78c71a6bce1bd896e1f6d);
+            
+    
+            var poly_line_f1daf3ef31917f6fd3ce1ffc02303e47 = L.polyline(
+                [[23.6845, 90.3563], [17.6868, 83.2185]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_f1daf3ef31917f6fd3ce1ffc02303e47.bindTooltip(
+                `<div>
+                     996.57 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f42e181a7ccf2acca3d12874e779ca46 = L.polyline(
+                [[22.5726, 88.3639], [19.7489, 85.3625]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_f42e181a7ccf2acca3d12874e779ca46.bindTooltip(
+                `<div>
+                     441.45 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fabe8b73a88ccb46bcf8833074b9cba2 = L.polyline(
+                [[22.5726, 88.3639], [17.6868, 83.2185]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_fabe8b73a88ccb46bcf8833074b9cba2.bindTooltip(
+                `<div>
+                     762.72 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a9d2056c09bfa94438b8aabc251d31d6 = L.polyline(
+                [[19.7489, 85.3625], [17.6868, 83.2185]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f29c90df4e9ca7215e086dd7f5cf7de2);
+        
+    
+            poly_line_a9d2056c09bfa94438b8aabc251d31d6.bindTooltip(
+                `<div>
+                     321.28 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

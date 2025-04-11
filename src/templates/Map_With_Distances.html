@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea892e4dc1de11710fa99ad88766478c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea892e4dc1de11710fa99ad88766478c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea892e4dc1de11710fa99ad88766478c = L.map(
+                "map_ea892e4dc1de11710fa99ad88766478c",
+                {
+                    center: [18.107080508452796, 87.32192446514101],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_baaff4af7f8f93c1d8c0044b1ba36b3c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_baaff4af7f8f93c1d8c0044b1ba36b3c.addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var marker_504ea8a5b7b257272ae8c507b23f2df6 = L.marker(
+                [18.107080508452796, 87.32192446514101],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_e76c606451314ff253bf31b17a217350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_747b33f2a954aaff909479e02b69a045 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c833dca9ba90deda37541da6061f1d02 = $(`<div id="html_c833dca9ba90deda37541da6061f1d02" style="width: 100.0%; height: 100.0%;"><b>Pinned Location</b></div>`)[0];
+                popup_747b33f2a954aaff909479e02b69a045.setContent(html_c833dca9ba90deda37541da6061f1d02);
+            
+        
+
+        marker_504ea8a5b7b257272ae8c507b23f2df6.bindPopup(popup_747b33f2a954aaff909479e02b69a045)
+        ;
+
+        
+    
+    
+                marker_504ea8a5b7b257272ae8c507b23f2df6.setIcon(icon_e76c606451314ff253bf31b17a217350);
+            
+    
+            var marker_91b6cf05bf3e0de994b35c24432bbaee = L.marker(
+                [28.6974, 77.4538],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_f329a8a96e723f330891f4a12ca398ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4325644ad7807e08665ef15df48718c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6efc274311718218ace25a434330abcb = $(`<div id="html_6efc274311718218ace25a434330abcb" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Hindon</b><br>Type: Airbases</div>`)[0];
+                popup_4325644ad7807e08665ef15df48718c4.setContent(html_6efc274311718218ace25a434330abcb);
+            
+        
+
+        marker_91b6cf05bf3e0de994b35c24432bbaee.bindPopup(popup_4325644ad7807e08665ef15df48718c4)
+        ;
+
+        
+    
+    
+                marker_91b6cf05bf3e0de994b35c24432bbaee.setIcon(icon_f329a8a96e723f330891f4a12ca398ff);
+            
+    
+            var marker_d1ee0e1c83b818ba44edb317e728459b = L.marker(
+                [22.4707, 70.0577],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_05b9f6da88e53d988601ced4224a96c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3210999206f0f824aa777a5acefccc18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eb3320d83b43dce17e4658e7131bfc7 = $(`<div id="html_2eb3320d83b43dce17e4658e7131bfc7" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Jamnagar</b><br>Type: Airbases</div>`)[0];
+                popup_3210999206f0f824aa777a5acefccc18.setContent(html_2eb3320d83b43dce17e4658e7131bfc7);
+            
+        
+
+        marker_d1ee0e1c83b818ba44edb317e728459b.bindPopup(popup_3210999206f0f824aa777a5acefccc18)
+        ;
+
+        
+    
+    
+                marker_d1ee0e1c83b818ba44edb317e728459b.setIcon(icon_05b9f6da88e53d988601ced4224a96c2);
+            
+    
+            var marker_1c8c2ecde4168079f3e4eaa550c08bf2 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_4ab0f0dcbdd52dc4dcb9a5184e8b7597 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_098785facfc6cac21ec594fa71cb19c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_359014ab718b9829fefb5c2f445b9584 = $(`<div id="html_359014ab718b9829fefb5c2f445b9584" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Vishakhapatnam</b><br>Type: Airbases</div>`)[0];
+                popup_098785facfc6cac21ec594fa71cb19c9.setContent(html_359014ab718b9829fefb5c2f445b9584);
+            
+        
+
+        marker_1c8c2ecde4168079f3e4eaa550c08bf2.bindPopup(popup_098785facfc6cac21ec594fa71cb19c9)
+        ;
+
+        
+    
+    
+                marker_1c8c2ecde4168079f3e4eaa550c08bf2.setIcon(icon_4ab0f0dcbdd52dc4dcb9a5184e8b7597);
+            
+    
+            var marker_dcda7a16eaefdcd737919320f913e41d = L.marker(
+                [27.1767, 78.0081],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_e9271ff46e85d4a2879b515c59a5153c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72c32c57dca969e90ee6d0f229586020 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfea04e5c0c5a85e098cd17081999ffd = $(`<div id="html_cfea04e5c0c5a85e098cd17081999ffd" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Agra</b><br>Type: Airbases</div>`)[0];
+                popup_72c32c57dca969e90ee6d0f229586020.setContent(html_cfea04e5c0c5a85e098cd17081999ffd);
+            
+        
+
+        marker_dcda7a16eaefdcd737919320f913e41d.bindPopup(popup_72c32c57dca969e90ee6d0f229586020)
+        ;
+
+        
+    
+    
+                marker_dcda7a16eaefdcd737919320f913e41d.setIcon(icon_e9271ff46e85d4a2879b515c59a5153c);
+            
+    
+            var marker_a1e57a66866d8ea68aa9f8a67885e2d1 = L.marker(
+                [32.2649, 75.6499],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_97dea67981eb0db073fd51c6537ec0e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fed72e41439ec2ac29ff2e7c9a7f8cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f56ae467c1df61d5a3ae5e7030d83142 = $(`<div id="html_f56ae467c1df61d5a3ae5e7030d83142" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Pathankot</b><br>Type: Airbases</div>`)[0];
+                popup_6fed72e41439ec2ac29ff2e7c9a7f8cc.setContent(html_f56ae467c1df61d5a3ae5e7030d83142);
+            
+        
+
+        marker_a1e57a66866d8ea68aa9f8a67885e2d1.bindPopup(popup_6fed72e41439ec2ac29ff2e7c9a7f8cc)
+        ;
+
+        
+    
+    
+                marker_a1e57a66866d8ea68aa9f8a67885e2d1.setIcon(icon_97dea67981eb0db073fd51c6537ec0e0);
+            
+    
+            var marker_d9f4cead5652bafa0498cbb67a9324d0 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_97a811cca82ad93e42a04a62f7d4b47b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2920a9670db97264581ca58088258e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7935a6c5b55a4c6ecfa2b02a1e9db657 = $(`<div id="html_7935a6c5b55a4c6ecfa2b02a1e9db657" style="width: 100.0%; height: 100.0%;"><b>Military Outpost Kolkata</b><br>Type: Military Outposts</div>`)[0];
+                popup_f2920a9670db97264581ca58088258e1.setContent(html_7935a6c5b55a4c6ecfa2b02a1e9db657);
+            
+        
+
+        marker_d9f4cead5652bafa0498cbb67a9324d0.bindPopup(popup_f2920a9670db97264581ca58088258e1)
+        ;
+
+        
+    
+    
+                marker_d9f4cead5652bafa0498cbb67a9324d0.setIcon(icon_97a811cca82ad93e42a04a62f7d4b47b);
+            
+    
+            var marker_dd65de7d3a5e68dd745e0c352e3abc51 = L.marker(
+                [11.6234, 92.7265],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_364af64a7bf9e2cd58fc2d1e9d83308e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a66dd6e00264a8805efe31e8f92a33d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e91244e1c0b1ac63d073c159798c6cf6 = $(`<div id="html_e91244e1c0b1ac63d073c159798c6cf6" style="width: 100.0%; height: 100.0%;"><b>Strategic Base Port Blair</b><br>Type: Military Outposts</div>`)[0];
+                popup_0a66dd6e00264a8805efe31e8f92a33d.setContent(html_e91244e1c0b1ac63d073c159798c6cf6);
+            
+        
+
+        marker_dd65de7d3a5e68dd745e0c352e3abc51.bindPopup(popup_0a66dd6e00264a8805efe31e8f92a33d)
+        ;
+
+        
+    
+    
+                marker_dd65de7d3a5e68dd745e0c352e3abc51.setIcon(icon_364af64a7bf9e2cd58fc2d1e9d83308e);
+            
+    
+            var marker_4b62436ce3b1f6eda7d67241929027fd = L.marker(
+                [34.1526, 77.5771],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_c3b56a60422b5a0bb67d5e7018c42914 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4090b22b2c1b653d06dc763662bfa3ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b001ad16944724eca5cb2b0b3bcfa33d = $(`<div id="html_b001ad16944724eca5cb2b0b3bcfa33d" style="width: 100.0%; height: 100.0%;"><b>Military Outpost Leh</b><br>Type: Military Outposts</div>`)[0];
+                popup_4090b22b2c1b653d06dc763662bfa3ad.setContent(html_b001ad16944724eca5cb2b0b3bcfa33d);
+            
+        
+
+        marker_4b62436ce3b1f6eda7d67241929027fd.bindPopup(popup_4090b22b2c1b653d06dc763662bfa3ad)
+        ;
+
+        
+    
+    
+                marker_4b62436ce3b1f6eda7d67241929027fd.setIcon(icon_c3b56a60422b5a0bb67d5e7018c42914);
+            
+    
+            var marker_d4a2b41532fb652e34b290ba5943d815 = L.marker(
+                [34.0837, 74.7973],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_03478fcb886e7bb7fedce49fcd01e257 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shield",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3a1bb673f2464bf3dfec23e15f4e569 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5f4310fef94111cd23d906e5b3bc326 = $(`<div id="html_c5f4310fef94111cd23d906e5b3bc326" style="width: 100.0%; height: 100.0%;"><b>Military Outpost Srinagar</b><br>Type: Military Outposts</div>`)[0];
+                popup_a3a1bb673f2464bf3dfec23e15f4e569.setContent(html_c5f4310fef94111cd23d906e5b3bc326);
+            
+        
+
+        marker_d4a2b41532fb652e34b290ba5943d815.bindPopup(popup_a3a1bb673f2464bf3dfec23e15f4e569)
+        ;
+
+        
+    
+    
+                marker_d4a2b41532fb652e34b290ba5943d815.setIcon(icon_03478fcb886e7bb7fedce49fcd01e257);
+            
+    
+            var marker_15b2fceb7676763a953f967eaa3f137d = L.marker(
+                [8.1634, 77.7284],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_31ad9f840d6bfa6486240b0bd51bf049 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0bffdf3ecbc13d81510c3a1208480c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cc4d752a40f47d07e8735648242db45 = $(`<div id="html_9cc4d752a40f47d07e8735648242db45" style="width: 100.0%; height: 100.0%;"><b>Kudankulam Nuclear Power Plant</b><br>Type: Power Plants</div>`)[0];
+                popup_f0bffdf3ecbc13d81510c3a1208480c3.setContent(html_9cc4d752a40f47d07e8735648242db45);
+            
+        
+
+        marker_15b2fceb7676763a953f967eaa3f137d.bindPopup(popup_f0bffdf3ecbc13d81510c3a1208480c3)
+        ;
+
+        
+    
+    
+                marker_15b2fceb7676763a953f967eaa3f137d.setIcon(icon_31ad9f840d6bfa6486240b0bd51bf049);
+            
+    
+            var marker_fd5801d1fe8f02fd051a9f367b43ee00 = L.marker(
+                [19.8638, 72.6523],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_2fea0b83e4c6b434e7bc812efb2c3baa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flash",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_119310b598c7a41cc6d28aac436016c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e16de6c7510a163858ec5f0cbef4c5b = $(`<div id="html_3e16de6c7510a163858ec5f0cbef4c5b" style="width: 100.0%; height: 100.0%;"><b>Tarapur Atomic Power Station</b><br>Type: Power Plants</div>`)[0];
+                popup_119310b598c7a41cc6d28aac436016c9.setContent(html_3e16de6c7510a163858ec5f0cbef4c5b);
+            
+        
+
+        marker_fd5801d1fe8f02fd051a9f367b43ee00.bindPopup(popup_119310b598c7a41cc6d28aac436016c9)
+        ;
+
+        
+    
+    
+                marker_fd5801d1fe8f02fd051a9f367b43ee00.setIcon(icon_2fea0b83e4c6b434e7bc812efb2c3baa);
+            
+    
+            var marker_da0e67bfe85a3173c036e298d5e120e1 = L.marker(
+                [12.5115, 80.1937],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_5b4766e1dc49434566befc8e36cfdb94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc9ee3371790b44a06ce72b295603505 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77824a2548fe38588c0c0f5f1729109d = $(`<div id="html_77824a2548fe38588c0c0f5f1729109d" style="width: 100.0%; height: 100.0%;"><b>Kalpakkam Nuclear Facility</b><br>Type: Power Plants</div>`)[0];
+                popup_bc9ee3371790b44a06ce72b295603505.setContent(html_77824a2548fe38588c0c0f5f1729109d);
+            
+        
+
+        marker_da0e67bfe85a3173c036e298d5e120e1.bindPopup(popup_bc9ee3371790b44a06ce72b295603505)
+        ;
+
+        
+    
+    
+                marker_da0e67bfe85a3173c036e298d5e120e1.setIcon(icon_5b4766e1dc49434566befc8e36cfdb94);
+            
+    
+            var marker_eb1a4e360861ca3a0b9543ed6507db1c = L.marker(
+                [30.39, 78.48],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_fdc9a6a8a6e78234f421e3d15ac49c2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ce571d52c14e3489b20f11a2c767958 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad19685e2b9059e2c6866173303a0098 = $(`<div id="html_ad19685e2b9059e2c6866173303a0098" style="width: 100.0%; height: 100.0%;"><b>Tehri Dam</b><br>Type: Dams</div>`)[0];
+                popup_7ce571d52c14e3489b20f11a2c767958.setContent(html_ad19685e2b9059e2c6866173303a0098);
+            
+        
+
+        marker_eb1a4e360861ca3a0b9543ed6507db1c.bindPopup(popup_7ce571d52c14e3489b20f11a2c767958)
+        ;
+
+        
+    
+    
+                marker_eb1a4e360861ca3a0b9543ed6507db1c.setIcon(icon_fdc9a6a8a6e78234f421e3d15ac49c2f);
+            
+    
+            var marker_f8351f6e85a2756fe3e2938173aae643 = L.marker(
+                [31.4167, 76.4333],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_f967c28197b1f37b9bac5550f68186e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d9c4a147c7e9a1016af995ae13ea7e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b7347443b01a853c4fbc2e36f4903d0 = $(`<div id="html_9b7347443b01a853c4fbc2e36f4903d0" style="width: 100.0%; height: 100.0%;"><b>Bhakra Dam</b><br>Type: Dams</div>`)[0];
+                popup_2d9c4a147c7e9a1016af995ae13ea7e0.setContent(html_9b7347443b01a853c4fbc2e36f4903d0);
+            
+        
+
+        marker_f8351f6e85a2756fe3e2938173aae643.bindPopup(popup_2d9c4a147c7e9a1016af995ae13ea7e0)
+        ;
+
+        
+    
+    
+                marker_f8351f6e85a2756fe3e2938173aae643.setIcon(icon_f967c28197b1f37b9bac5550f68186e8);
+            
+    
+            var marker_97ace2f5738739c023b9b70445f7624e = L.marker(
+                [21.5375, 83.8726],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_eac438cc8a206d9791ccb4b3199f946b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_136692e3773016caf03873e43f326592 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b0019febd919378529d74bf7dc143c6 = $(`<div id="html_0b0019febd919378529d74bf7dc143c6" style="width: 100.0%; height: 100.0%;"><b>Hirakud Dam</b><br>Type: Dams</div>`)[0];
+                popup_136692e3773016caf03873e43f326592.setContent(html_0b0019febd919378529d74bf7dc143c6);
+            
+        
+
+        marker_97ace2f5738739c023b9b70445f7624e.bindPopup(popup_136692e3773016caf03873e43f326592)
+        ;
+
+        
+    
+    
+                marker_97ace2f5738739c023b9b70445f7624e.setIcon(icon_eac438cc8a206d9791ccb4b3199f946b);
+            
+    
+            var marker_72542854d6ffa36db9aca131b2fcdd4b = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_11b75f59ac6f0cb989b5a0d913b527b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4aace1f891cd241cef28fe31b0ed967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84941ffae2041f2cbbd728e2c2f567cf = $(`<div id="html_84941ffae2041f2cbbd728e2c2f567cf" style="width: 100.0%; height: 100.0%;"><b>Air Force Station Vishakhapatnam</b><br>Distance: 437.30 km</div>`)[0];
+                popup_c4aace1f891cd241cef28fe31b0ed967.setContent(html_84941ffae2041f2cbbd728e2c2f567cf);
+            
+        
+
+        marker_72542854d6ffa36db9aca131b2fcdd4b.bindPopup(popup_c4aace1f891cd241cef28fe31b0ed967)
+        ;
+
+        
+    
+    
+                marker_72542854d6ffa36db9aca131b2fcdd4b.setIcon(icon_11b75f59ac6f0cb989b5a0d913b527b4);
+            
+    
+            var poly_line_c7f8500e60c48bb8f232b052f13bb9a1 = L.polyline(
+                [[18.107080508452796, 87.32192446514101], [17.6868, 83.2185]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            poly_line_c7f8500e60c48bb8f232b052f13bb9a1.bindTooltip(
+                `<div>
+                     437.30 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d6f6a3a90db084085ea44c5ff65f838d = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_958d223a75b00ae20ab8873a93a62205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b65a4731f0640af2f7804c4bdd389ab0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f227625120765402723b8b7ec472bf7 = $(`<div id="html_2f227625120765402723b8b7ec472bf7" style="width: 100.0%; height: 100.0%;"><b>Military Outpost Kolkata</b><br>Distance: 506.20 km</div>`)[0];
+                popup_b65a4731f0640af2f7804c4bdd389ab0.setContent(html_2f227625120765402723b8b7ec472bf7);
+            
+        
+
+        marker_d6f6a3a90db084085ea44c5ff65f838d.bindPopup(popup_b65a4731f0640af2f7804c4bdd389ab0)
+        ;
+
+        
+    
+    
+                marker_d6f6a3a90db084085ea44c5ff65f838d.setIcon(icon_958d223a75b00ae20ab8873a93a62205);
+            
+    
+            var poly_line_47ff1de2d9bfcdd99799b4c6a7fb7ce4 = L.polyline(
+                [[18.107080508452796, 87.32192446514101], [22.5726, 88.3639]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            poly_line_47ff1de2d9bfcdd99799b4c6a7fb7ce4.bindTooltip(
+                `<div>
+                     506.20 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b36fa7fcb3b3156fa0be04bb572f86fa = L.marker(
+                [21.5375, 83.8726],
+                {
+}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            var icon_1b656ced72a17a1ec14c865c0be12cab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d1ebd18bf14f34ae012335479984e94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b82302b29cbad659b3573b6ea22f18aa = $(`<div id="html_b82302b29cbad659b3573b6ea22f18aa" style="width: 100.0%; height: 100.0%;"><b>Hirakud Dam</b><br>Distance: 524.16 km</div>`)[0];
+                popup_8d1ebd18bf14f34ae012335479984e94.setContent(html_b82302b29cbad659b3573b6ea22f18aa);
+            
+        
+
+        marker_b36fa7fcb3b3156fa0be04bb572f86fa.bindPopup(popup_8d1ebd18bf14f34ae012335479984e94)
+        ;
+
+        
+    
+    
+                marker_b36fa7fcb3b3156fa0be04bb572f86fa.setIcon(icon_1b656ced72a17a1ec14c865c0be12cab);
+            
+    
+            var poly_line_f085ac384c2d59e2ff40730debaafca9 = L.polyline(
+                [[18.107080508452796, 87.32192446514101], [21.5375, 83.8726]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ea892e4dc1de11710fa99ad88766478c);
+        
+    
+            poly_line_f085ac384c2d59e2ff40730debaafca9.bindTooltip(
+                `<div>
+                     524.16 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
